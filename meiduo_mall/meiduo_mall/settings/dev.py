@@ -63,7 +63,7 @@ INSTALLED_APPS = [
     'orders.apps.OrdersConfig',
     'payments.apps.PaymentsConfig',
     'meiduo_admin.apps.MeiduoAdminConfig',
-    'corsheaders', # 跨域模块
+    'corsheaders',  # 跨域模块 解决跨域问题
 
     # 'haystack',
     'django_crontab',  # 定时任务
@@ -324,4 +324,4 @@ CORS_ORIGIN_WHITELIST = (
     'www.meiduo.site:8080',
     'api.meiduo.site:8000'
 )
-CORS_ALLOW_CREDENTIALS = True  # 允许携带cookie
+CORS_ALLOW_CREDENTIALS = True  # 跨域允许携带cookie
